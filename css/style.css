@@ -1,0 +1,24 @@
+.bg {
+          background-image: url('img/white.jpg');
+          position:fixed;
+          background-repeat: repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%; /*same height as jumbotron */
+          top:0;
+          left:0;
+          z-index: -1;
+      }
+.jumbotron {
+            padding: 0px;
+
+            background-image: url('img/white.jpg');
+            
+            background-size: cover;
+          }
+
+.container{
+            padding: 80px 120px;
+            text-shadow: #444 0 1px 1px;
+            height:100%;
+                    }
