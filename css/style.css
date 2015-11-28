@@ -1,3 +1,23 @@
+.navbar {
+        margin-bottom: 0;
+        background-color: #2d2d30;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        background-color: white;
+      }
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+        font-size: 15px !important;
+              }
+
+/* The active link */
+.navbar-nav li.active a {
+          color: #fff !important;
+          background-color:#29292c !important;
+              }
+
 .bg {
           background-image: url('img/white.jpg');
           position:fixed;
@@ -13,7 +33,7 @@
             padding: 0px;
 
             background-image: url('img/white.jpg');
-            
+
             background-size: cover;
           }
 
