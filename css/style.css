@@ -36,7 +36,14 @@
 
             background-size: cover;
           }
+#searchbar{
+  background-color:rgba(0, 0, 0, 0.5);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
 
+
+}
 .container{
             padding: 80px 120px;
             text-shadow: #444 0 1px 1px;

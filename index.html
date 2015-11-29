@@ -44,12 +44,14 @@
     <div class="container text-center">
       <br><br>
       <h1>What's for lunch?</h1>
-
+      <p>This is the place for searching</p>
+      <p>I am looking for (Chinese/Korean restaurant)...</p>
       <div class="col-sm-12">
         <div id="searchbar">      <!-- The form for search-->
-          <form>
-            <p>This is the place for searching</p>
-            <p>I am looking for (Chinese/Korean restaurant)...</p>
+          <form action="">  <!-- show "what's for breakfast/lunch/dinner?" based on time-->
+            <input type="text" name="rtname" placeholder="What' for lunch?"><!-- users type in restaurants or food name-->
+            <input type="text" name="pnumber" placeholder="How many people?"><!-- users type in -->
+            <input type="submit" name="submit">
           </form>
         </div>
       </div>
@@ -59,8 +61,15 @@
   <div class="row text-center">
     <div class="col-sm-8">
       <p>Restaurants of the Week</p>
-      <img src="img/luffy.jpg">
-      <img src="img/luffy.jpg">
+      <div class="col-sm-6">
+        <p>Restaurant 1</p>
+        <img src="img/luffy.jpg">
+      </div>
+
+      <div class="col-sm-6">
+        <p>Restaurant 2</p>
+        <img src="img/luffy.jpg">
+      </div>
     </div>
     <div class="col-sm-4">
       <p>Chinese Restaurants Ranking</p>
