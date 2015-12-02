@@ -27,16 +27,26 @@
 
 
       <div class="collapse navbar-collapse" id="myNavbar"> <!-- The navbar for large view-->
+        <ul class="nav navbar-nav">
+          <li><a href="  ">Recommandations</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Ranking</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Chinese</a></li>
+              <li><a href="#">Korean</a></li>
+              <li><a href="#">Japanese</a></li>
+            </ul>
+          </li>
+          <li><a href=" ">Popular Food</a></li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="  ">Restaurant Recommandations</a></li>
-          <li><a href=" ">Restarurants Ranking</a></li>
-          <li><a href=" ">Popular Foods</a></li>
-          <li><a href=" ">Contact Us</a></li>
+          <li><a href="#loginmodal" data-toggle="modal" data-target="#loginmodal">LOG IN</a></li>
+          <li><a href="#signupmodal" data-toggle="modal" data-target="#signupmodal">SIGN UP</a></li>
           <li><a href="  "><span class="glyphicon glyphicon-user"></span></a></li>
         </ul>
       </div>
     </div>
   </nav>
+
 
 
 
@@ -48,10 +58,10 @@
       <p>I am looking for (Chinese/Korean restaurant)...</p>
       <div class="col-sm-12">
         <div id="searchbar">      <!-- The form for search-->
-          <form action="">  <!-- show "what's for breakfast/lunch/dinner?" based on time-->
-            <input type="text" name="rtname" placeholder="What' for lunch?"><!-- users type in restaurants or food name-->
-            <input type="text" name="pnumber" placeholder="How many people?"><!-- users type in -->
-            <input type="submit" name="submit">
+          <form class="form-inline" role="form" action="">  <!-- show "what's for breakfast/lunch/dinner?" based on time-->
+            <input type="text" class ="form-control" name="rtname"  id="rname" placeholder="What' for lunch?"><!-- users type in restaurants or food name-->
+            <input type="text" class ="form-control" name="pnumber"  id="pnum" placeholder="How many people?"><!-- users type in -->
+            <input type="submit" class="btn btn-default" name="submit">
           </form>
         </div>
       </div>
@@ -60,19 +70,19 @@
 
   <div class="row text-center">
     <div class="col-sm-8">
-      <p>Restaurants of the Week</p>
-      <div class="col-sm-6">
-        <p>Restaurant 1</p>
+      <h2>Restaurants of the Week</h2>
+      <div class="col-sm-6" >
+        <h3>Restaurant 1</h3>
         <img src="img/luffy.jpg">
       </div>
 
-      <div class="col-sm-6">
-        <p>Restaurant 2</p>
+      <div class="col-sm-6" >
+        <h3>Restaurant 2</h3>
         <img src="img/luffy.jpg">
       </div>
     </div>
-    <div class="col-sm-4">
-      <p>Chinese Restaurants Ranking</p>
+    <div class="col-sm-4" >
+      <h3>Chinese Restaurants Ranking</h3>
       <img src="img/chopper2.jpeg">
       <p>No1</p>
       <p>No2</p>
@@ -123,5 +133,71 @@
     <p>Copyright © Jiayi Guo & Pengfei Wang 2015</p>
   </footer>
 
+  <!-- Sign up Modal -->
+  <div class="modal fade" id="signupmodal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">SIGN UP</h4>
+          </div>
+          <div class="modal-body ">
+
+              <form role="form" class="form-inline">
+                <div class="form-group">
+                  <label for="uName" class="">Username:</label>
+                  <input type="text" class="form-control" id="uName" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                  <label for="cPwd">Confirm Password:</label>
+                  <input type="password" class="form-control" id="cPwd" placeholder="Enter password again">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Log In Modal -->
+  <div class="modal fade" id="loginmodal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="modal-header text-center">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">LOG IN</h4>
+          </div>
+          <div class="modal-body ">
+
+              <form role="form" class="form-inline">
+                <div class="form-group">
+                  <label for="uName" class="">Username:</label>
+                  <input type="text" class="form-control" id="uName" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+
+                <button type="submit" class="btn btn-default">LOG IN</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
