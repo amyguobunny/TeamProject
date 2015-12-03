@@ -11,8 +11,29 @@
               text-shadow: #444 0 2px 2px;
               height:100%;
   }
+
   #nav{
        position: absolute;
+  }
+
+  #logo1{
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    display: inline-block;
+  }
+  #logo2{
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    display: none;
+  }
+
+  #UMRestaurantHeading{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 0;
+    color: #5a5a5a;
   }
 
 }
@@ -52,5 +73,24 @@
     color: white;
   }
 
+  #logo1{
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    display: none;
+  }
+  #logo2{
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    display: inline-block;
+  }
+
+  #UMRestaurantHeading{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 0;
+    color: white;
+  }
 
 }
