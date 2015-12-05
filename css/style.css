@@ -1,4 +1,4 @@
-@media (max-width: 800px){
+@media (max-width: 768px){
   .jumbotron {
               padding: 0px;
               background-image: url('../img/headerBackground2.jpg');
@@ -36,9 +36,13 @@
     color: #5a5a5a;
   }
 
+  .img-style{
+    margin: 12px auto;
+  }
+
 }
 
-@media (min-width: 800px){
+@media (min-width: 768px){
   /*.bg {
             background-image: url('img/white.jpg');
             position:fixed;
@@ -59,7 +63,7 @@
             }
 
   .container{
-              padding: 80px 120px;
+              padding: 0;
               text-shadow: #444 0 1px 1px;
               height:100%;
             }
@@ -91,6 +95,11 @@
     font-size: 20px;
     margin-top: 0;
     color: white;
+  }
+
+  .img-style{
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
 }
