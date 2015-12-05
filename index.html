@@ -134,46 +134,106 @@
 
     </div>
   </div>
-<!--           Jumbotron            -->
+<!--             Video              -->
 
-  <header class="jumbotron secondjumbotron">
+  <div class="videoPlay">
+    <div id="overVideo">
+      <h1 id="overVideoH1" class="text-center hidden-xs">Make a Glass of Juice</h1>
+      <h3  id="overVideoH3" class="text-center hidden-xs">And have a healthy day</h3>
+      <img src="img/JuiceIcon.png" alt="JuiceIcon" id="juiceIcon" class="hidden-xs hidden-sm" />
+    </div>
+    <video preload="auto" autoplay="autoplay" loop="loop" id="pretzel-video" class="video-playing">
+      <source src="video/juice/webm" type="video/webm">
+      <source src="video/juice.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+  <!-- <header class="jumbotron secondjumbotron">
     <div class="container text-center" id="headerContainer">
       <br><br>
       <h1>What's for lunch?</h1>
       <p>This is the place for searching</p>
       <p>I am looking for (Chinese/Korean restaurant)...</p>
     </div>
-  </header>
+  </header> -->
+
+  <div class="container">
+    <h2>Restaurant Recommandation</h2>
+    <h5 class="segmentLine">_______________</h5>
+    <div class="row content">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="img/recommand/Tianchu.jpg" class="img-responsive img-style"/>
+        <h3 class="setWidth">Tianchu</h3>
+        <p class="setWidth">613 E William St.  (734)769-1368</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="img/recommand/Tomukun.jpg" class="img-responsive img-style" />
+        <h3 class="setWidth">Tomukun</h3>
+        <p class="setWidth">505 E Liberty St.  (734)369-2602</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="img/recommand/Kangs.jpg" class="img-responsive img-style" />
+        <h3 class="setWidth">Kang's</h3>
+        <p class="setWidth">1327 S University Ave.  (734)761-1327</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="img/recommand/Buffalo.jpg" class="img-responsive img-style" />
+        <h3 class="setWidth">Buffalo Wild Wings</h3>
+        <p class="setWidth">205 S State St.  (734)997-9143</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="img/recommand/Totoro.jpg" class="img-responsive img-style" />
+        <h3 class="setWidth">Totoro</h3>
+        <p class="setWidth">215 S State St.  (734)302-3511</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="img/recommand/Savas.jpg" class="img-responsive img-style" />
+        <h3 class="setWidth">Savas</h3>
+        <p class="setWidth">216 S State St.  (734)623-2233</p>
+      </div>
+      <h5 class="col-xs-12 seeMore">More Restaurants</h5>
+    </div>
+  </div>
+
+
+
 
 <!--             Footer             -->
-
-  <footer class="text-center"> <!-- use icons for fb, twitter and linkedIn-->
-    <a href="">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-twitter fa-stack-1x"></i>
-      </span>
-    </a>
-    <a href="">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-facebook fa-stack-1x"></i>
-      </span>
-    </a>
-    <a href="">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x"></i>
-      </span>
-    </a>
-    <a class="up-arrow pull-right" href="  " data-toggle="tooltip" title="TO TOP" >
-        <span class="fa-stack fa-lg">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-chevron-up fa-stack-1x"></i>
-      </span>
-    </a>
-    <p>Copyright © Jiayi Guo and Pengfei Wang 2015</p>
-  </footer>
+  <div class="footer">
+    <footer class="container"> <!-- use icons for fb, twitter and linkedIn-->
+      <div class="row">
+        <div class="hidden-xs hidden-sm col-md-2 col-md-offset-2">
+          <img src="img/logo2.png" alt="footerLogo" id="footerLogo"/>
+        </div>
+        <div class="hidden-xs col-sm-2 col-sm-offset-4 col-md-2 col-md-offset-1 footerText">
+          <p>About Us:</p>
+          <p>Pengfei Wang</p>
+          <p>Jiayi Guo</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-2 footerText">
+          <p>Support:</p>
+          <p>University of Michigan</p>
+          <p>UM School of Information</p>
+          <p>Bootstrap</p>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center footerText" id="xsFooterText">
+          <p>About UMFood:</p>
+          <p>Pengfei Wang</p>
+          <p>Jiayi Guo</p>
+          <p>Contact Us</p>
+        </div>
+        <div  class="col-xs-12 hidden-sm hidden-md hidden-lg text-center footerText">
+          <p>Support:</p>
+          <p>University of Michigan</p>
+          <p>UM School of Information</p>
+          <p>Bootstrap</p>
+        </div>
+        <p class="col-xs-12 text-center">Copyright © Jiayi Guo and Pengfei Wang 2015</p>
+      </div>
+    </footer>
+  </div>
 
 </body>
 </html>
