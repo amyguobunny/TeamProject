@@ -171,7 +171,7 @@
   <!-- Log In Modal -->
   <div class="modal fade" id="loginmodal" role="dialog">
     <div class="modal-dialog">
-
+      
       <!-- Modal content-->
       <div class="modal-content">
           <div class="modal-header text-center">
@@ -180,18 +180,21 @@
           </div>
           <div class="modal-body ">
 
-              <form role="form" class="form-inline">
+              <form role="form" class="form-inline" method="post" action="login.php">
                 <div class="form-group">
                   <label for="uName" class="">Username:</label>
-                  <input type="text" class="form-control" id="uName" placeholder="Enter your username">
+                  <input type="text" class="form-control" id="uName" name="username" placeholder="Enter your username">
                 </div>
                 <div class="form-group">
                   <label for="pwd">Password:</label>
-                  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                  <input type="password" class="form-control" id="pwd"  name="password" placeholder="Enter password">
                 </div>
 
-                <button type="submit" class="btn btn-default">LOG IN</button>
+                <button type="submit" name="login" class="btn btn-default">LOG IN</button>
               </form>
+
+
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
