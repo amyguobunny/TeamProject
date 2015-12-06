@@ -89,6 +89,10 @@ video{
   margin: 0 auto;
 }
 
+.recipe{
+  margin-top: 40px;
+}
+
 .footer{
   background: #506761;
   color: white !important;
