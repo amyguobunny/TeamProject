@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UMRestaurants</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav id="nav" class="navbar navbar-default navbar-fixed-top"> <!-- The navbar-->
+    <div class="container-fluid">
+      <div class="navbar-header"> <!-- The navbar for tablet and mobile view-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href=" ">
+          <img id="logo1" src="img/logo1.png" />
+          <img id="logo2" src="img/logo2.png" />
+          <h1 id="UMRestaurantHeading">UM Food</h1>
+        </a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="myNavbar"> <!-- The navbar for large view-->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-sm hidden-md hidden-lg"><a href=" ">Restaurant Recommandation</a></li>
+          <li class="hidden-sm hidden-md hidden-lg"><a href=" ">Restaurant Classification</a></li>
+          <li class="hidden-sm hidden-md hidden-lg"><a href=" ">Recipe Recommandation</a></li>
+          <li><a href=" ">Log In</a></li>
+          <li><a href=" ">Sigh Up</a></li>
+          <!-- <li><a href="http://www.google.com"><span class="glyphicon glyphicon-user"></span></a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div class="bg">
+
+  </div> -->
+
+  <header class="jumbotron firstjumbotron">
+    <div class="container text-center" id="headerContainer">
+      <span>Taste Restaurants Around U of M</span>
+      <h5 class="segmentLine titleline">Discover the amazing foods you haven't tasted before.</h5>
+      <!-- <p>This is the place for searching</p>
+      <p>I am looking for (Chinese/Korean restaurant)...</p> -->
+    </div>
+  </header>
+
+<!--           Content Nav            -->
+
+  <div class="container">
+    <div class="row text-center contentNav">
+      <div class="hidden-xs col-sm-3 col-md-2 col-md-offset-2">
+        <p class="choose1" onmouseover="changeYellow(this);" onmouseout="changeback(this);" style="cursor:pointer">HOMEPAGE</p>
+        <div class="choose1 stripBar" onmouseover="changeYellow(this);" onmouseout="changeback(this);" style="cursor:pointer">
+        </div>
+      </div>
+      <div class="hidden-xs col-sm-3 col-md-2 thisPage">
+        <p style="cursor:pointer">POPULAR</p>
+        <div class="stripBar" style="cursor:pointer">
+        </div>
+      </div>
+      <div class="hidden-xs col-sm-3 col-md-2">
+        <p class="choose2" onmouseover="changeYellow(this);" onmouseout="changeback(this);" style="cursor:pointer">CATEGORY</p>
+        <div class="choose2 stripBar" onmouseover="changeYellow(this);" onmouseout="changeback(this);" style="cursor:pointer">
+        </div>
+      </div>
+      <div class="hidden-xs col-sm-3 col-md-2">
+        <p class="choose3" onmouseover="changeYellow(this);" onmouseout="changeback(this);" style="cursor:pointer">COOKBOOK</p>
+        <div class="choose3 stripBar" onmouseover="changeYellow(this);" onmouseout="changeback(this);" style="cursor:pointer">
+        </div>
+      </div>
+      <div id="thinline" class="col-xs-12">
+      </div>
+    </div>
+  </div>
+
+
+<!--              Body                -->
+  <div class="container">
+    <div class="row content">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 title">
+        <h2 class="hidden-xs col-md-12">Popular Restaurants Recommand</h2>
+        <h2 class="col-xs-12 hidden-sm hidden-md hidden-lg text-center">Popular Restaurants Recommand</h2>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 divHover">
+        <img src="img/recommand/Tianchu.jpg" class="img-responsive img-style col-sm-4"/>
+          <h3 class="setWidth hidden-sm hidden-md hidden-lg">Tianchu</h3>
+          <p class="setWidth hidden-sm hidden-md hidden-lg">613 E William St.  (734)769-1368</p>
+        <div class="hidden-xs col-sm-8">
+          <h3 class="">Tianchu</h3>
+          <p class="">613 E William St. Ann Arbor, MI 48104.  (734)769-1368</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 divHover">
+        <img src="img/recommand/Tomukun.jpg" class="img-responsive img-style col-sm-4" />
+        <h3 class="setWidth hidden-sm hidden-md hidden-lg">Tomukun</h3>
+        <p class="setWidth hidden-sm hidden-md hidden-lg">505 E Liberty St.  (734)369-2602</p>
+        <div class="hidden-xs col-sm-8">
+          <h3 class="">Tomukun</h3>
+          <p class="">505 E Liberty St. Ann Arbor, MI 48104.  (734)369-2602</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 divHover">
+        <img src="img/recommand/Kangs.jpg" class="img-responsive img-style col-sm-4" />
+        <h3 class="setWidth hidden-sm hidden-md hidden-lg">Kang's</h3>
+        <p class="setWidth hidden-sm hidden-md hidden-lg">1327 S University Ave.  (734)761-1327</p>
+        <div class="hidden-xs col-sm-8">
+          <h3 class="">Kang's</h3>
+          <p class="">1327 S University Ave. Ann Arbor, MI 48104.  (734)761-1327</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 divHover">
+        <img src="img/recommand/Buffalo.jpg" class="img-responsive img-style col-sm-4" />
+        <h3 class="setWidth hidden-sm hidden-md hidden-lg">Buffalo Wild Wings</h3>
+        <p class="setWidth hidden-sm hidden-md hidden-lg">205 S State St.  (734)997-9143</p>
+        <div class="hidden-xs col-sm-8">
+          <h3 class="">Buffalo Wild Wings</h3>
+          <p class="">205 S State St. Ann Arbor, MI 48104.  (734)997-9143</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 divHover">
+        <img src="img/recommand/Totoro.jpg" class="img-responsive img-style col-sm-4" />
+        <h3 class="setWidth hidden-sm hidden-md hidden-lg">Totoro</h3>
+        <p class="setWidth hidden-sm hidden-md hidden-lg">215 S State St.  (734)302-3511</p>
+        <div class="hidden-xs col-sm-8">
+          <h3 class="">Totoro</h3>
+          <p class="">215 S State St. Ann Arbor, MI 48104.  (734)302-3511</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 divHover">
+        <img src="img/recommand/Savas.jpg" class="img-responsive img-style col-sm-4" />
+        <h3 class="setWidth hidden-sm hidden-md hidden-lg">Savas</h3>
+        <p class="setWidth hidden-sm hidden-md hidden-lg">216 S State St.  (734)623-2233</p>
+        <div class="hidden-xs col-sm-8">
+          <h3 class="">Savas</h3>
+          <p class="">216 S State St. Ann Arbor, MI 48104.  (734)623-2233</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--             Footer             -->
+  <div class="footer">
+    <footer class="container"> <!-- use icons for fb, twitter and linkedIn-->
+      <div class="row">
+        <div class="hidden-xs hidden-sm col-md-2 col-md-offset-2">
+          <img src="img/logo2.png" alt="footerLogo" id="footerLogo"/>
+        </div>
+        <div class="hidden-xs col-sm-2 col-sm-offset-4 col-md-2 col-md-offset-1 footerText">
+          <p>We Are:</p>
+          <p>Pengfei Wang</p>
+          <p>Jiayi Guo</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="hidden-xs col-sm-3 col-md-2 footerText">
+          <p>Support:</p>
+          <p>University of Michigan</p>
+          <p>UM School of Information</p>
+          <p>Bootstrap</p>
+        </div>
+        <div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center footerText" id="xsFooterText">
+          <p>About UMFood:</p>
+          <p>Pengfei Wang</p>
+          <p>Jiayi Guo</p>
+          <p>Contact Us</p>
+        </div>
+        <div  class="col-xs-12 hidden-sm hidden-md hidden-lg text-center footerText">
+          <p>Support:</p>
+          <p>University of Michigan</p>
+          <p>UM School of Information</p>
+          <p>Bootstrap</p>
+        </div>
+        <p class="col-xs-12 text-center">Copyright © Jiayi Guo and Pengfei Wang 2015</p>
+      </div>
+    </footer>
+  </div>
+
+<script type="text/javascript">
+  function changeYellow(ele){
+    var classname = ele.className.split(" ");
+    var elements = document.getElementsByClassName(classname[0]);
+    elements[0].style.color = "#f7d207";
+    elements[1].style.background = "#f7d207";
+  }
+
+  function changeback(ele){
+    var classname = ele.className.split(" ");
+    var elements = document.getElementsByClassName(classname[0]);
+    elements[0].style.color = "#4a7e64";
+    elements[1].style.background = "#4a7e64";
+  }
+</script>
+
+
+</body>
+</html>
